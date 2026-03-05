@@ -1,36 +1,205 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber Edu — Образовательная платформа по кибербезопасности и AI-безопасности
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.3-blue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
 
-First, run the development server:
+Интерактивная образовательная платформа для изучения кибербезопасности и AI-безопасности. Предназначена для школьников 12-14 лет, учителей и всех, кто хочет научиться защищать себя в цифровом мире.
+
+---
+
+## 🌟 Особенности
+
+- **Интерактивное обучение** — симуляторы атак, игры и практические задания
+- **Безопасная среда** — все упражнения выполняются в изолированной песочнице
+- **Геймификация** — баллы, уровни, достижения за выполнение заданий
+- **Раздел для учителей** — методические материалы, вебинары, форум
+- **Современный стек** — Next.js, React, TypeScript, Tailwind CSS
+
+---
+
+## 📚 Разделы платформы
+
+### 🔐 Уязвимости сайтов (`/hacking`)
+Изучите основные типы веб-уязвимостей:
+- SQL-инъекции
+- XSS-атаки (Cross-Site Scripting)
+- CSRF-атаки (Cross-Site Request Forgery)
+- Безопасность паролей
+
+**Интерактивный элемент:** Симулятор SQL-инъекции с 3 уровнями сложности
+
+---
+
+### 🤖 AI-безопасность (`/ai`)
+Научитесь распознавать манипуляции:
+- Deepfakes и подделки
+- Фейковые новости
+- Манипуляции с помощью ИИ
+- Факт-чекинг
+
+**Интерактивный элемент:** Игра "Найди фейк" — определите поддельную новость
+
+---
+
+### 🧪 Лаборатории (`/labs`)
+Практические задания в безопасной среде:
+- Взлом уязвимого сайта
+- XSS-атака на форму комментариев
+- Обход аутентификации
+- Распознавание AI-фейка
+- Создание безопасного сайта
+
+**Система прогресса:**
+- Выполняйте задания и получайте баллы
+- Повышайте уровень
+- Отслеживайте прогресс
+
+---
+
+### 👨‍🏫 Учителям (`/teachers`)
+Ресурсы для педагогов:
+- 📚 Методические материалы
+- 📊 Презентации к урокам
+- 📝 Рабочие листы
+- 🎬 Видеоуроки
+- 🎥 Вебинары и расписание
+- 💬 Форум для обсуждений
+
+---
+
+## 🚀 Быстрый старт
+
+### Предварительные требования
+- Node.js 18+ 
+- npm 9+
+
+### Установка
 
 ```bash
+# Клонируйте репозиторий
+git clone <repository-url>
+cd cyber-edu-frontend
+
+# Установите зависимости
+npm install
+
+# Запустите сервер разработки
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📖 Как использовать
 
-## Learn More
+### Для учеников
 
-To learn more about Next.js, take a look at the following resources:
+1. **Начните с главной страницы** — ознакомьтесь с возможностями платформы
+2. **Выберите раздел** — "Уязвимости сайтов" или "AI-безопасность"
+3. **Изучайте теорию** — читайте уроки и материалы
+4. **Практикуйтесь** — проходите симуляторы и игры
+5. **Выполняйте задания** — зарабатывайте баллы в лабораториях
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Тестовые учётные данные:**
+- Email: `student@example.com`
+- Пароль: `password`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Для учителей
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Войдите как учитель** (опционально):
+   - Email: `teacher@example.com`
+   - Пароль: `password`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Посетите раздел "Учителям"**:
+   - Скачайте методические материалы
+   - Зарегистрируйтесь на вебинары
+   - Присоединяйтесь к форуму
+
+3. **Используйте материалы на уроках**:
+   - Презентации для проектора
+   - Рабочие листы для самостоятельной работы
+   - Видеоуроки для дистанционного обучения
+
+---
+
+## 🎮 Интерактивные элементы
+
+### Симулятор SQL-инъекции
+
+**Цель:** Научиться находить и эксплуатировать SQL-уязвимости
+
+**Уровни:**
+1. **Базовый SELECT** — получите данные из таблицы
+2. **UNION-атака** — объедините результаты запросов
+3. **Обход аутентификации** — войдите без пароля
+
+**Подсказки:**
+- Уровень 1: `SELECT * FROM users`
+- Уровень 2: `SELECT * FROM users UNION SELECT * FROM products`
+- Уровень 3: `' OR '1'='1`
+
+---
+
+### Игра "Найди фейк"
+
+**Цель:** Распознать фейковую новость
+
+**Правила:**
+- Вам показываются 2 новости на одну тему
+- Одна из них — подделка
+- Выберите фейковую новость
+- Получите объяснение после выбора
+
+**Советы:**
+- Проверяйте источник
+- Ищите подтверждение в других СМИ
+- Обратите внимание на эмоциональные заголовки
+
+---
+
+## 🏆 Система достижений
+
+| Уровень | Очков | Описание |
+|---------|-------|----------|
+| Новичок | 0-499 | Начало пути |
+| Любитель | 500-999 | Первые успехи |
+| Продвинутый | 1000-1999 | Опытный пользователь |
+| Эксперт | 2000-2999 | Мастер безопасности |
+| Профессионал | 3000+ | Гуру кибербезопасности |
+
+---
+
+## 🛠️ Технологии
+
+- **Framework:** Next.js 16.1.6 (App Router)
+- **Язык:** TypeScript 5
+- **Стили:** Tailwind CSS v4
+- **Анимации:** Framer Motion
+- **Стейт:** Redux Toolkit
+- **Сборка:** Turbopack
+
+---
+
+## 📞 Поддержка
+
+- Email: info@cyberedu.example.com
+- Документация: см. `DEVELOPER.md` для разработчиков
+
+---
+
+## ⚠️ Важное предупреждение
+
+Все навыки, полученные на этой платформе, должны использоваться **только в образовательных целях** и **только на системах, на которые у вас есть письменное разрешение владельца**.
+
+Несанкционированный доступ к компьютерным системам является преступлением.
+
+---
+
+## 📄 Лицензия
+
+© 2026 Cyber Edu. Все права защищены.
