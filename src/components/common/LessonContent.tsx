@@ -118,8 +118,8 @@ export const LessonContent: React.FC<LessonContentProps> = ({ content }) => {
       inList = true
       const itemContent = line.substring(2)
 
-      // Список с эмодзи и жирным текстом: - ✅ **Текст**
-      const emojiMatch = itemContent.match(/^([✅❌⚠️🔴🟢🟡])\s*\*\*(.+?)\*\*\s*(.*)?$/)
+      // Список с эмодзи и жирным текстом: - ✅ **Текст** или - 🟢 **Текст**
+      const emojiMatch = itemContent.match(/^(\p{Emoji})\s*\*\*(.+?)\*\*\s*(.*)?$/u)
       if (emojiMatch) {
         const [, emoji, boldText, rest] = emojiMatch
         listItems.push(
@@ -132,10 +132,10 @@ export const LessonContent: React.FC<LessonContentProps> = ({ content }) => {
         return
       }
 
-      // Список с эмодзи: - ✅ Текст
-      if (/^[✅❌⚠️🔴🟢🟡]/.test(itemContent)) {
-        const emoji = itemContent.charAt(0)
-        const rest = itemContent.substring(1).trim()
+      // Список с эмодзи: - ✅ Текст или - 🟢 Текст
+      if (/^\p{Emoji}/u.test(itemContent)) {
+        const emoji = Array.from(itemContent)[0]
+        const rest = itemContent.substring(emoji.length).trim()
         listItems.push(
           <li key={`item-${index}`} className="ml-2">
             <span className="mr-2">{emoji}</span>
